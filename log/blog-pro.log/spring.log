@@ -1,0 +1,6 @@
+2021-03-07 18:00:25.276  INFO 75012 --- [restartedMain] com.xmy.blog.BlogApplication             : Starting BlogApplication on xumingyangdeair with PID 75012 (/Users/xumingyang/IdeaProjects/blog/target/classes started by xumingyang in /Users/xumingyang/IdeaProjects/blog)
+2021-03-07 18:00:25.292  INFO 75012 --- [restartedMain] com.xmy.blog.BlogApplication             : The following profiles are active: pro
+2021-03-07 18:00:29.067  WARN 75012 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 18:00:29.371  WARN 75012 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-03-07 18:00:29.373  WARN 75012 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-03-07 18:00:29.559  INFO 75012 --- [restartedMain] com.xmy.blog.BlogApplication             : Started BlogApplication in 5.005 seconds (JVM running for 6.419)

@@ -1,0 +1,6 @@
+logging:
+  level:
+    root: info
+    com.xmy.blog: debug
+  file:
+    path: log/blog-dev.log

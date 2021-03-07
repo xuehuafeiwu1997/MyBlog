@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+logging:
+  level:
+    root: warn
+    com.xmy.blog: info
+  file:
+    path: log/blog-pro.log
