@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 //代表它指的是控制器
 public class IndexController {
     @GetMapping("")
-    public String Index() {
+    public String index() {
         //这样会出现500错误
 //        int i = 9 / 0;
 //        String blog = null;
@@ -18,5 +18,10 @@ public class IndexController {
 //        }
         System.out.println("-----index-----------");
         return "index";
+    }
+
+    @GetMapping("/blog")
+    public String blog() {
+        return "blog";
     }
 }
