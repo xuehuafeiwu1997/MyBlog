@@ -1,0 +1,1 @@
+package com.xmy.blog.dao;import com.xmy.blog.po.Type;import org.springframework.data.jpa.repository.JpaRepository;/** * @author xmy * @date 2021/3/15 2:07 下午 */public interface TypeRepository extends JpaRepository<Type,Long> {}
