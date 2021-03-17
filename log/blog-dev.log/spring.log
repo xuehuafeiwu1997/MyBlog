@@ -1287,3 +1287,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-03-17 16:52:35.473  INFO 32994 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
 2021-03-17 16:52:50.999  WARN 32994 --- [http-nio-8083-exec-10] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
 2021-03-17 16:52:57.007  WARN 32994 --- [http-nio-8083-exec-1] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2021-03-17 16:54:24.416  INFO 32994 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-17 16:54:24.419  INFO 32994 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-17 16:54:24.426  INFO 32994 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Shutdown initiated...
+2021-03-17 16:54:24.435  INFO 32994 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Shutdown completed.
