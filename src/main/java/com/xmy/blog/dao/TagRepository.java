@@ -1,0 +1,1 @@
+package com.xmy.blog.dao;import com.xmy.blog.po.Tag;import org.springframework.data.jpa.repository.JpaRepository;/** * @author xmy * @date 2021/3/16 7:22 下午 */public interface TagRepository extends JpaRepository<Tag,Long> {    Tag findByName(String name);}

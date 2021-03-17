@@ -1,0 +1,1 @@
+package com.xmy.blog.web.admin;import org.springframework.stereotype.Controller;/** * @author xmy * @date 2021/3/17 11:47 上午 */@Controllerpublic class TagController {}
