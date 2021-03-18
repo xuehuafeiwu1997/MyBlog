@@ -1,0 +1,1 @@
+package com.xmy.blog.dao;import com.xmy.blog.po.Blog;import org.springframework.data.jpa.repository.JpaRepository;import org.springframework.data.jpa.repository.JpaSpecificationExecutor;/** * @author xmy * @date 2021/3/17 5:05 下午 */public interface BlogRepository extends JpaRepository<Blog,Long>, JpaSpecificationExecutor<Blog> {}
