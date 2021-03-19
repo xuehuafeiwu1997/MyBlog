@@ -1,22 +1,38 @@
 package com.xmy.blog.web;
 
 import com.xmy.blog.NotFounfExcetion;
+import com.xmy.blog.service.BlogService;
+import com.xmy.blog.service.TagService;
+import com.xmy.blog.service.TypeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 //代表它指的是控制器
 public class IndexController {
-    @GetMapping("")
-    public String index() {
-        //这样会出现500错误
-//        int i = 9 / 0;
-//        String blog = null;
-//        if (blog == null) {
-//            throw new NotFounfExcetion("博客不存在");
-//        }
-        System.out.println("-----index-----------");
+
+    @Autowired
+    private BlogService blogService;
+
+    @Autowired
+    private TypeService typeService;
+
+    @Autowired
+    private TagService tagService;
+
+    @GetMapping("/")
+    public String index(@PageableDefault(size=8,sort={"updateTime"},direction = Sort.Direction.DESC)Pageable pageable, Model model) {
+        model.addAttribute("page", blogService.listBlog(pageable));
+        model.addAttribute("types",typeService.listTypeTop(6));
+        model.addAttribute("tags",typeService.listTypeTop(10));
+        model.addAttribute("recommendBlogs",blogService.listRecommendBlogTop(8));
         return "index";
     }
 
