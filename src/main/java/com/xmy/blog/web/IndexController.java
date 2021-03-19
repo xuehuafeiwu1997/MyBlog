@@ -36,8 +36,10 @@ public class IndexController {
         return "index";
     }
 
-    @GetMapping("/blog")
-    public String blog() {
+    @GetMapping("/blog/{id}")
+    public String blog(@PathVariable Long id) {
+        System.out.println("当前博客的id为"+id);
         return "blog";
+
     }
 }
