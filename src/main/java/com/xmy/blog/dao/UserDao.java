@@ -1,0 +1,1 @@
+package com.xmy.blog.dao;import com.xmy.blog.entity.User;import org.apache.ibatis.annotations.Mapper;import org.apache.ibatis.annotations.Param;/** * @author xmy * @date 2021/3/23 4:36 下午 */@Mapperpublic interface UserDao {    User findByUsernameAndPassword(@Param("username") String username, @Param("password") String password);}

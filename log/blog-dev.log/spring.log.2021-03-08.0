@@ -856,8 +856,8 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2021-03-08 23:32:53.519  INFO 47756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Starting...
 2021-03-08 23:32:53.550  INFO 47756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Start completed.
 2021-03-08 23:32:53.551  INFO 47756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021-03-08 23:32:53.695 ERROR 47756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: com.xmy.blog.po.Blog
-2021-03-08 23:32:53.698  WARN 47756 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.xmy.blog.po.Blog
+2021-03-08 23:32:53.695 ERROR 47756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: com.xmy.blog.entity.Blog
+2021-03-08 23:32:53.698  WARN 47756 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.xmy.blog.entity.Blog
 2021-03-08 23:32:53.699  INFO 47756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Shutdown initiated...
 2021-03-08 23:32:53.730  INFO 47756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Shutdown completed.
 2021-03-08 23:32:53.731  INFO 47756 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
@@ -866,7 +866,7 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2021-03-08 23:32:53.781 ERROR 47756 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.xmy.blog.po.Blog
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.xmy.blog.entity.Blog
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
@@ -890,7 +890,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.xmy.blog.po.Blog
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.xmy.blog.entity.Blog
 	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
 	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
 	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:781)

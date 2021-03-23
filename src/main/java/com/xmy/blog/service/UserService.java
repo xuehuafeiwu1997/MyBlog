@@ -1,1 +1,1 @@
-package com.xmy.blog.service;import com.xmy.blog.po.User;/** * @author xmy * @date 2021/3/9 11:20 下午 */public interface UserService {    User userCheck(String username, String password);}
+package com.xmy.blog.service;import com.xmy.blog.entity.User;/** * @author xmy * @date 2021/3/23 4:39 下午 */public interface UserService {    //    核对用户名和密码    User checkUser(String username, String password);}

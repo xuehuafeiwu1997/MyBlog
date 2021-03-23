@@ -4,3 +4,8 @@ logging:
     com.xmy.blog: debug
   file:
     path: log/blog-dev.log
+mybatis:
+  #  type-aliases-package: com.xmy.blog
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true

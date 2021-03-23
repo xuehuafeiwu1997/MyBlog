@@ -31,3 +31,4 @@ build/
 .vscode/
 .DS_Store
 /.gitignore
+/log/blog-dev.log/spring.log
