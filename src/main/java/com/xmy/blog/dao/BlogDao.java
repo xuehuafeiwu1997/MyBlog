@@ -1,0 +1,1 @@
+package com.xmy.blog.dao;import org.apache.ibatis.annotations.Mapper;/** * @author xmy * @date 2021/3/23 5:58 下午 */@Mapperpublic interface BlogDao {}
